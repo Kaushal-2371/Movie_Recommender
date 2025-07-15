@@ -11,4 +11,4 @@ class MovieRecommender:
             result = result[result['genre'].str.lower() == genre.lower()]
         if mood:
             result = result[result['mood'].str.lower() == mood.lower()]
-        return result['movie'].tolist()
+        return result['movie_title'].tolist()
